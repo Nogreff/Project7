@@ -5,10 +5,8 @@ html {
 }
 body {
   margin: 0 auto;
-  overflow: auto;
+  overflow-x: hidden;
   height: 100%;
-  overscroll-behavior: none;
-  -webkit-overflow-scrolling: auto;
 }
 /*   HEADER*/
 header > * {
@@ -196,10 +194,7 @@ video {
   bottom: 0;
   min-width: 100vw;
   min-height: 100%;
-  transform: translateX(calc((100% - 100vw) / 2));
   z-index: -1;
-  /*   filter: blur(0.2rem);
-  transform: scale(1.05); */
 }
 @media (max-width: 55rem) {
   .home_top {
