@@ -135,6 +135,7 @@ header > * {
 /*   HOME TOP*/
 .home_top {
   width: 100vw;
+  min-height: 100%;
   overflow-y: hidden;
 }
 .top_description {
@@ -189,11 +190,12 @@ header > * {
   box-shadow: 2px 2px 1rem lightgray;
 }
 video {
-  position: fixed;
+  position: absolute;
   right: 0;
   bottom: 0;
   min-width: 100vw;
-  min-height: 100vh;
+  min-height: 100%;
+  transform: translateX(calc((100% - 100vw) / 2));
   z-index: -1;
 }
 @media (max-width: 55rem) {
