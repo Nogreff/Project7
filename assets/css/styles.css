@@ -127,7 +127,7 @@ header > * {
     padding: min(15vh, 10rem) 1rem;
   }
   .mobile_menu > ul:first-child {
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
   }
   .mobile_toggle {
     top: 1rem;
