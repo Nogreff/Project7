@@ -135,6 +135,7 @@ header > * {
 /*   HOME TOP*/
 .home_top {
   width: 100vw;
+  overflow-y: hidden;
 }
 .top_description {
   width: 30vw !important;
