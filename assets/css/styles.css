@@ -2,11 +2,20 @@ html {
   font-family: "Oxanium" !important;
   overflow: hidden;
   height: 100%;
+  scroll-behavior: smooth;
 }
 body {
   margin: 0 auto;
   overflow-x: hidden;
   height: 100%;
+  scroll-behavior: smooth;
+}
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: transparent;
 }
 /*   HEADER*/
 header > * {
@@ -49,12 +58,14 @@ header > * {
   list-style: none;
   padding: 0;
 }
-.menu_info {
+.menu_info > a {
+  display: inline-block;
   padding: 1rem;
   color: #e84545;
   transition: text-shadow 500ms ease;
+  text-decoration: none;
 }
-.menu_info:hover {
+.menu_info:hover > a {
   cursor: pointer;
   text-shadow: 2px 2px 1rem red;
 }
@@ -312,7 +323,7 @@ video {
   padding: 0;
   display: flex;
   justify-content: left;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 2rem;
 }
 .list_info::before {
@@ -386,9 +397,6 @@ video {
   }
   .benefits_description {
     width: 90vw;
-  }
-  .list_info {
-    align-items: flex-start;
   }
   .list_info::before {
     width: 2rem;
@@ -503,6 +511,7 @@ video {
   height: auto;
   max-height: 0;
   margin: 0;
+  text-align: center;
   -webkit-transition: max-height 600ms ease;
   transition: max-height 600ms ease;
 }
