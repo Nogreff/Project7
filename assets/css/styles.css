@@ -1,11 +1,11 @@
 html {
   font-family: "Oxanium" !important;
-  overflow-x: hidden;
+  overflow: hidden;
   height: 100%;
 }
 body {
   margin: 0 auto;
-  overflow-x: hidden;
+  overflow: auto;
   height: 100%;
   -webkit-overflow-scrolling: auto;
 }
