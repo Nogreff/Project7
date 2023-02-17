@@ -2,13 +2,15 @@ html {
   font-family: "Oxanium" !important;
   overflow: hidden;
   height: 100%;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
+  -webkit-scroll-behavior: smooth !important;
 }
 body {
   margin: 0 auto;
   overflow-x: hidden;
   height: 100%;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
+  -webkit-scroll-behavior: smooth !important;
 }
 input,
 textarea,
@@ -145,7 +147,7 @@ header > * {
     right: 1em;
   }
   .mobile_menu > .contact_list {
-    font-size: 1rem;
+    font-size: 0.8rem;
     width: 80%;
   }
 }
@@ -263,13 +265,13 @@ video {
 .home_benefits {
   background-color: #262626;
   width: 100%;
-  min-height: 50rem;
+  min-height: 40rem;
   color: white;
   display: flex;
   justify-content: space-evenly;
   align-items: flex-end;
   flex-wrap: wrap-reverse;
-  padding: 4rem 0;
+  padding: 15vh 0;
 }
 
 .benefits_picture {
@@ -436,14 +438,17 @@ video {
 .home_services > h1 {
   font-size: 3rem;
   font-weight: 600;
+  margin: 2rem 0 0 0;
 }
 .home_services > p {
   color: #777777;
+  margin: 2rem 0;
 }
 .services_container {
   display: flex;
   flex-wrap: wrap;
   width: 100vw;
+  margin-top: 8rem;
 }
 .service_card {
   position: relative;
@@ -543,6 +548,7 @@ video {
   }
   .services_container {
     min-height: fit-content;
+    margin-top: 5rem;
   }
   .home_services > h1 {
     width: 90%;
@@ -566,10 +572,10 @@ video {
   align-items: center;
 }
 .appointment_description {
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
 }
 .appointment_service {
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
 }
 .appointment_information {
   width: 50%;
@@ -578,6 +584,7 @@ video {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 2rem 0;
 }
 .description_list {
   width: 60%;
@@ -585,6 +592,9 @@ video {
   padding: 0;
   display: flex;
   flex-direction: column;
+}
+.list_perks {
+  padding-bottom: 0.5rem;
 }
 .list_perks::before {
   content: "\2714";
@@ -597,6 +607,9 @@ video {
 .appointment_information > h2 {
   width: 60%;
   text-align: left;
+}
+.appointment_information > h2 {
+  font-size: 2rem;
 }
 .appointment_photo,
 .service_photo {
@@ -738,6 +751,7 @@ footer {
   padding: 0;
 }
 .contact_info {
+  width: 100%;
   padding: 0.5rem;
   display: flex;
   align-items: center;
@@ -746,12 +760,12 @@ footer {
   content: "";
   display: inline-block;
   background-color: #e84545;
-  mask-size: cover;
+  mask-size: contain;
   mask-repeat: no-repeat;
   -webkit-mask-size: cover;
   -webkit-mask-repeat: no-repeat;
-  width: 1.2rem;
-  height: 1.2rem;
+  width: 1.3rem;
+  height: 1.3rem;
   margin-right: 1rem;
 }
 .contact_info.location:before {
@@ -776,6 +790,10 @@ footer {
   padding: 0;
   list-style: none;
   width: 18rem;
+}
+.link_info > a {
+  color: white;
+  text-decoration: none;
 }
 .link_info:first-child {
   font-size: 1.5rem;
@@ -808,6 +826,7 @@ footer {
   display: inline-block;
   color: #777777;
   width: 8rem;
+  margin-right: 3rem;
 }
 .hours_info.mon_fri::before {
   content: "Monday - Friday";

@@ -1,263 +1,277 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, minimum-scale=1"
-    />
-    <title>Project 7</title>
-    <link rel="stylesheet" href="/assets/css/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oxanium&family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <div class="header_wrapper">
-        <img class="header_logo" src="assets/img/logoTop.svg" />
-        <button
-          class="mobile_toggle"
-          aria-controls="list_menu"
-          aria-expanded="false"
-        ></button>
-        <div class="menu_container mobile_menu" data-visible="false">
-          <ul class="menu_list">
-            <li class="menu_info"><a href="#home_benefits">Benefits</a></li>
-            <li class="menu_info"><a href="#home_services">Services</a></li>
-            <li class="menu_info"><a href="#home_appointment_info">Service center</a></li>
-            <li class="menu_info"><a href="#home_contact_us">Make an appointment</a></li>
-          </ul>
-          <ul class="contact_list">
-            <li class="contact_info location">8 8th Ave. Newtown, PA 18940</li>
-            <li class="contact_info phone">+801 837 245</li>
-            <li class="contact_info email">info@autoride.com</li>
-          </ul>
-        </div>
-      </div>
-    </header>
-    <section class="home_top">
-      <video autoplay loop muted plays-inline>
-        <source src="assets/video/home.mp4" type="video/mp4" />
-      </video>
-      <div class="top_description">
-        <img src="assets/img/logo.svg" />
-        <div class="description_text">
-          <h1>The best joyride for your car</h1>
-          <h3>Everything your car needs!</h3>
-        </div>
-        <a class="description_button_more" href="">read more</a>
-      </div>
-    </section>
-    <section class="home_benefits" id="home_benefits">
-      <div class="benefits_picture">
-        <img src="assets/img/benefits.jpg" />
-      </div>
-      <div class="benefits_description">
-        <h2>Looking for renovation?</h2>
-        <p>
-         Auto Ride has a team of highly qualified technicians on staff ready to meet all of your auto repair and service needs.
-        </p>
-        <ul class="benefits_list">
-          <li class="list_info experience observed">
-            <div class="info_title"></div>
-            <label> 50 years of experience</label>
-            <p>
-              Thanks to over 50 years of experience in the industry and our
-              versatility and ability to work on any vehicle, you can come to us
-              with the utmost confidence that your car will be thoroughly
-              repaired, maintained, and cared for by our expert mechanics.
-            </p>
-          </li>
-          <li class="list_info quick observed">
-            <div class="info_title"></div>
-            <label> Quick and efficient</label>
-            <p>
-              Our workers skills allow for the best repair results at a reduced
-              cost. With AUTO RIDE, you can rest assured that your car will
-              receive the best professional services.
-            </p>
-          </li>
-          <li class="list_info certified observed">
-            <div class="info_title"></div>
-            <label> Certified mechanics</label>
-            <p>
-              We only work with highly rated mechanics. All services are backed
-              by our 12-month / 12,000-mile warranty.
-            </p>
-          </li>
-          <li class="list_info diagnostic observed">
-            <div class="info_title"></div>
-            <label> Car Diagnostic</label>
-            <p>
-              Car diagnostic tests help pinpoint issues quickly and reliably,
-              without need for a full vehicle inspection. If you’re short on
-              time, these tests can help identify next steps to get you safely
-              back on the road.
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="home_services" id="home_services">
-      <h1>Check out our services</h1>
-      <p class="services_subtitle observed">We have everything you need</p>
-      <div class="services_container">
-        <div class="service_card wheels">
-          <h2>WHEELS</h2>
-          <p>Rims, tires, custom size in various finish for all vehicles</p>
-        </div>
-        <div class="service_card performance">
-          <h2>PERFORMANCE</h2>
-          <p>Exhaust & intake systems, ignition, transmission, brake system</p>
-        </div>
-        <div class="service_card exterior">
-          <h2>EXTERIOR</h2>
-          <p>Grilles, spoilers, mirrors, chrome trim, deflectors, car covers</p>
-        </div>
-        <div class="service_card electronics">
-          <h2>ELECTRONICS</h2>
-          <p>Stereos, Cameras & Driver Safety, GPS Navigation, Speakers etc.</p>
-        </div>
-        <div class="service_card lighting">
-          <h2>LIGHTING</h2>
-          <p>Headlights, tail lights, bumper, tailgate & interior lights</p>
-        </div>
-        <div class="service_card parts">
-          <h2>BODY PARTS</h2>
-          <p>Body kits, doors, roofs, bumpers, fenders & quarter panels</p>
-        </div>
-        <div class="service_card interior">
-          <h2>INTERIOR</h2>
-          <p>Floor mats, dash kits, seat covers, steering wheels, dashboards</p>
-        </div>
-        <div class="service_card repair">
-          <h2>REPAIR PARTS</h2>
-          <p>Intake, suspension systems, ignition, brakes & fuel delivery</p>
-        </div>
-        <div class="service_card tuning">
-          <h2>TUNING</h2>
-          <p>
-            Engine tuning, suspension tuning, body tuning and interior tuning
-          </p>
-        </div>
-        <div class="service_card other">
-          <h2>OTHER</h2>
-          <p>Car & truck premium accessories, video tutorials & assistance</p>
-        </div>
-      </div>
-    </section>
-    <section class="home_appointment_info" id="home_appointment_info">
-      <div class="appointment_description">
-        <div class="appointment_information service observed">
-          <h2>Service center</h2>
-          <p>
-            Don't leave your car in the hands of just any service center when
-            you have our team of expert technicians at your disposal. Our
-            technicians have years of experience working on countless cars,
-            trucks, and SUVs, vast automotive knowledge, and extensive training
-            to keep your car in top shape for many years of joyful driving! 
-            <br></br>
-            Our Available Repair Services Include:
-          </p>
-          <ul class="description_list">
-            <li class="list_perks">Oil Change</li>
-            <li class="list_perks">Brake Service</li>
-            <li class="list_perks">Transmission Service</li>
-            <li class="list_perks">Filter Replacement</li>
-            <li class="list_perks">Suspension Repair</li>
-            <li class="list_perks">Wheel Alignment</li>
-            <li class="list_perks">And more..</li>
-          </ul>
-        </div>
-        <img class="appointment_photo" src="assets/img/services.jpg" />
-      </div>
-      <div class="appointment_service">
-        <img class="service_photo" src="assets/img/appointment.jpg" />
-        <div class="appointment_information appointment observed">
-          <h2>Get appointment</h2>
-          <p>
-    We have a quality team that can take care of your vehicle - from a standard oil change to complete overhaul.  We have extensive experience repairing vehicles from vintage to brand new in all foreign and domestic models.
-    <br></br>
-    ​If you would like to schedule an appointment with us, please complete the form below and we will confirm your appointment as soon as possible.  
-          </p>
-          <ul class="description_list">
-            <li class="list_perks">Avoid unnecessary wait times</li>
-            <li class="list_perks">Request a personalized job</li>
-            <li class="list_perks">Multiple payment methods</li>
-            <li class="list_perks">12-month / 12,000-mile warranty</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section class="home_contact_us" id="home_contact_us">
-      <h1>Contact us</h1>
-      <p>
-        Please fill out the contact form and our operator will contact you to
-        schedule an appointment.
-      </p>
-      <form id="contact_form">
-        <input type="text" placeholder="Name" />
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, minimum-scale=1"
+		/>
+		<title>Project 7</title>
+		<link rel="stylesheet" href="/assets/css/styles.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Oxanium&family=Roboto&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header>
+			<div class="header_wrapper">
+				<img class="header_logo" src="assets/img/logoTop.svg" />
+				<button
+					class="mobile_toggle"
+					aria-controls="list_menu"
+					aria-expanded="false"
+				></button>
+				<div class="menu_container mobile_menu" data-visible="false">
+					<ul class="menu_list">
+						<li class="menu_info"><a href="#home_benefits">Benefits</a></li>
+						<li class="menu_info"><a href="#home_services">Services</a></li>
+						<li class="menu_info">
+							<a href="#home_appointment_info">Service center</a>
+						</li>
+						<li class="menu_info">
+							<a href="#home_contact_us">Make an appointment</a>
+						</li>
+					</ul>
+					<ul class="contact_list">
+						<li class="contact_info location">8 8th Ave. Newtown, PA 18940</li>
+						<li class="contact_info phone">+801 837 245</li>
+						<li class="contact_info email">info@autoride.com</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<section class="home_top">
+			<video autoplay loop muted plays-inline>
+				<source src="assets/video/home.mp4" type="video/mp4" />
+			</video>
+			<div class="top_description">
+				<img src="assets/img/logo.svg" />
+				<div class="description_text">
+					<h1>The best joyride for your car</h1>
+					<h3>Everything your car needs!</h3>
+				</div>
+				<a class="description_button_more" href="#home_benefits">read more</a>
+			</div>
+		</section>
+		<section class="home_benefits" id="home_benefits">
+			<div class="benefits_picture">
+				<img src="assets/img/benefits.jpg" />
+			</div>
+			<div class="benefits_description">
+				<h2>Looking for renovation?</h2>
+				<p>
+					Auto Ride has a team of highly qualified technicians on staff ready to
+					meet all of your auto repair and service needs.
+				</p>
+				<ul class="benefits_list">
+					<li class="list_info experience observed">
+						<div class="info_title"></div>
+						<label> 50 years of experience</label>
+						<p>
+							Thanks to over 50 years of experience in the industry and our
+							versatility and ability to work on any vehicle, you can come to us
+							with the utmost confidence that your car will be thoroughly
+							repaired, maintained, and cared for by our expert mechanics.
+						</p>
+					</li>
+					<li class="list_info quick observed">
+						<div class="info_title"></div>
+						<label> Quick and efficient</label>
+						<p>
+							Our workers skills allow for the best repair results at a reduced
+							cost. With AUTO RIDE, you can rest assured that your car will
+							receive the best professional services.
+						</p>
+					</li>
+					<li class="list_info certified observed">
+						<div class="info_title"></div>
+						<label> Certified mechanics</label>
+						<p>
+							We only work with highly rated mechanics. All services are backed
+							by our 12-month / 12,000-mile warranty.
+						</p>
+					</li>
+					<li class="list_info diagnostic observed">
+						<div class="info_title"></div>
+						<label> Car Diagnostic</label>
+						<p>
+							Car diagnostic tests help pinpoint issues quickly and reliably,
+							without need for a full vehicle inspection. If you’re short on
+							time, these tests can help identify next steps to get you safely
+							back on the road.
+						</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="home_services" id="home_services">
+			<h1>Check out our services</h1>
+			<p class="services_subtitle observed">We have everything you need</p>
+			<div class="services_container">
+				<div class="service_card wheels">
+					<h2>WHEELS</h2>
+					<p>Rims, tires, custom size in various finish for all vehicles</p>
+				</div>
+				<div class="service_card performance">
+					<h2>PERFORMANCE</h2>
+					<p>Exhaust & intake systems, ignition, transmission, brake system</p>
+				</div>
+				<div class="service_card exterior">
+					<h2>EXTERIOR</h2>
+					<p>Grilles, spoilers, mirrors, chrome trim, deflectors, car covers</p>
+				</div>
+				<div class="service_card electronics">
+					<h2>ELECTRONICS</h2>
+					<p>Stereos, Cameras & Driver Safety, GPS Navigation, Speakers etc.</p>
+				</div>
+				<div class="service_card lighting">
+					<h2>LIGHTING</h2>
+					<p>Headlights, tail lights, bumper, tailgate & interior lights</p>
+				</div>
+				<div class="service_card parts">
+					<h2>BODY PARTS</h2>
+					<p>Body kits, doors, roofs, bumpers, fenders & quarter panels</p>
+				</div>
+				<div class="service_card interior">
+					<h2>INTERIOR</h2>
+					<p>Floor mats, dash kits, seat covers, steering wheels, dashboards</p>
+				</div>
+				<div class="service_card repair">
+					<h2>REPAIR PARTS</h2>
+					<p>Intake, suspension systems, ignition, brakes & fuel delivery</p>
+				</div>
+				<div class="service_card tuning">
+					<h2>TUNING</h2>
+					<p>
+						Engine tuning, suspension tuning, body tuning and interior tuning
+					</p>
+				</div>
+				<div class="service_card other">
+					<h2>OTHER</h2>
+					<p>Car & truck premium accessories, video tutorials & assistance</p>
+				</div>
+			</div>
+		</section>
+		<section class="home_appointment_info" id="home_appointment_info">
+			<div class="appointment_description">
+				<div class="appointment_information service observed">
+					<h2>Service center</h2>
+					<p>
+						Don't leave your car in the hands of just any service center when
+						you have our team of expert technicians at your disposal. Our
+						technicians have years of experience working on countless cars,
+						trucks, and SUVs, vast automotive knowledge, and extensive training
+						to keep your car in top shape for many years of joyful driving!
+					</p>
+					<p>Our Available Repair Services Include:</p>
+					<ul class="description_list">
+						<li class="list_perks">Oil Change</li>
+						<li class="list_perks">Brake Service</li>
+						<li class="list_perks">Transmission Service</li>
+						<li class="list_perks">Filter Replacement</li>
+						<li class="list_perks">Suspension Repair</li>
+						<li class="list_perks">Wheel Alignment</li>
+						<li class="list_perks">And more..</li>
+					</ul>
+				</div>
+				<img class="appointment_photo" src="assets/img/services.jpg" />
+			</div>
+			<div class="appointment_service">
+				<img class="service_photo" src="assets/img/appointment.jpg" />
+				<div class="appointment_information appointment observed">
+					<h2>Get appointment</h2>
+					<p>
+						We have a quality team that can take care of your vehicle. From a
+						standard oil change to complete overhaul. We have extensive
+						experience repairing vehicles from vintage to brand new in all
+						foreign and domestic models.
+					</p>
+					<p>
+						​If you would like to schedule an appointment with us, please
+						complete the form below, and we will confirm your appointment as
+						soon as possible.
+					</p>
+					<ul class="description_list">
+						<li class="list_perks">Avoid unnecessary wait times</li>
+						<li class="list_perks">Request a personalized job</li>
+						<li class="list_perks">Multiple payment methods</li>
+						<li class="list_perks">12-month / 12,000-mile warranty</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="home_contact_us" id="home_contact_us">
+			<h1>Contact us</h1>
+			<p>
+				Please fill out the contact form and our operator will contact you to
+				schedule an appointment.
+			</p>
+			<form id="contact_form">
+				<input type="text" placeholder="Name" />
 
-        <input placeholder="Email" type="email" />
+				<input placeholder="Email" type="email" />
 
-        <input placeholder="Phone" type="text" />
+				<input placeholder="Phone" type="text" />
 
-        <textarea placeholder="Appointment reason"></textarea>
+				<textarea placeholder="Appointment reason"></textarea>
 
-        <button class="submit_button">Send message</button>
-      </form>
-    </section>
-    <footer>
-      <div class="footer_container">
-        <div class="footer_contact">
-          <img src="assets/img/logo.svg" />
-          <ul class="contact_list">
-            <li class="contact_info location">8 8th Ave. Newtown, PA 18940</li>
-            <li class="contact_info phone">+801 837 245</li>
-            <li class="contact_info email">info@autoride.com</li>
-          </ul>
-        </div>
-        <div class="footer_links">
-          <ul class="link_list">
-            <li class="link_info">Useful pages</li>
-            <li class="link_info">Our benefits</li>
-            <li class="link_info">Service center</li>
-            <li class="link_info">About us</li>
-            <li class="link_info">Conctact us</li>
-          </ul>
-          <ul class="link_list">
-            <li class="link_info">Services</li>
-            <li class="link_info">Wheels</li>
-            <li class="link_info">Performance</li>
-            <li class="link_info">Exterior</li>
-            <li class="link_info">Electronics</li>
-            <li class="link_info">Lighting</li>
-            <li class="link_info">Tuning</li>
-            <li class="link_info">Body parts</li>
-            <li class="link_info">Interior</li>
-            <li class="link_info">Repair parts</li>
-            <li class="link_info">Others</li>
-          </ul>
-        </div>
-        <div class="footer_hours">
-          <ul class="hours_list">
-            <li class="hours_info">Our hours</li>
-            <li class="hours_info mon_fri">9:00 - 20:00</li>
-            <li class="hours_info sat">9:00 - 14:00</li>
-          </ul>
-        </div>
-      </div>
-      <ul class="footer_socials">
-        <li class="social_icon facebook"></li>
-        <li class="social_icon twitter"></li>
-        <li class="social_icon youtube"></li>
-        <li class="social_icon instagram"></li>
-      </ul>
-    </footer>
-    <script defer src="/assets/js/main.js"></script>
-  </body>
+				<button class="submit_button">Send message</button>
+			</form>
+		</section>
+		<footer>
+			<div class="footer_container">
+				<div class="footer_contact">
+					<img src="assets/img/logo.svg" />
+					<ul class="contact_list">
+						<li class="contact_info location">8 8th Ave. Newtown, PA 18940</li>
+						<li class="contact_info phone">+801 837 245</li>
+						<li class="contact_info email">info@autoride.com</li>
+					</ul>
+				</div>
+				<div class="footer_links">
+					<ul class="link_list">
+						<li class="link_info">Useful pages</li>
+						<li class="link_info"><a href="#home_benefits">Benefits</a></li>
+						<li class="link_info"><a href="#home_services">Services</a></li>
+						<li class="link_info">
+							<a href="#home_appointment_info">Service center</a>
+						</li>
+						<li class="link_info">
+							<a href="#home_contact_us">Make an appointment</a>
+						</li>
+					</ul>
+					<ul class="link_list">
+						<li class="link_info"><a href="#home_services">Services</a></li>
+						<li class="link_info"><a href="#home_services">Wheels</a></li>
+						<li class="link_info"><a href="#home_services">Performance</a></li>
+						<li class="link_info"><a href="#home_services">Exterior</a></li>
+						<li class="link_info"><a href="#home_services">Electronics</a></li>
+						<li class="link_info"><a href="#home_services">Lighting</a></li>
+						<li class="link_info"><a href="#home_services">Body parts</a></li>
+						<li class="link_info"><a href="#home_services">Interior</a></li>
+						<li class="link_info"><a href="#home_services">Repair parts</a></li>
+						<li class="link_info"><a href="#home_services">Tuning</a></li>
+						<li class="link_info"><a href="#home_services">Others</a></li>
+					</ul>
+				</div>
+				<div class="footer_hours">
+					<ul class="hours_list">
+						<li class="hours_info">Our hours</li>
+						<li class="hours_info mon_fri">9:00 - 20:00</li>
+						<li class="hours_info sat">9:00 - 14:00</li>
+					</ul>
+				</div>
+			</div>
+			<ul class="footer_socials">
+				<li class="social_icon facebook"></li>
+				<li class="social_icon twitter"></li>
+				<li class="social_icon youtube"></li>
+				<li class="social_icon instagram"></li>
+			</ul>
+		</footer>
+		<script defer src="/assets/js/main.js"></script>
+	</body>
 </html>
