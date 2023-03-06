@@ -910,11 +910,9 @@ footer {
 	}
 	.link_list {
 		width: 9rem;
+		font-size: 0;
 	}
 	.link_info:first-child {
 		font-size: 1.2rem;
-	}
-	.link_info:not(:first-child) {
-		font-size: 0.9rem;
 	}
 }
